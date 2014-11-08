@@ -1,2 +1,258 @@
-Hey!!!!!!
-It worked.
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eric G Rogers | Portfolio</title>
+
+
+    <!-- Normalize.css -->
+      <link href="css/normalize.css" rel="stylesheet">
+    <!-- Favicon -->
+      <link href="media/images/icons/egr.ico" rel="shortcut icon">
+    <!-- FONTS -->
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Project Gallery -->
+    <link href="css/gallery.css" rel="stylesheet">
+    <!-- Lightbox -->
+    <link href="css/lightbox.css" rel="stylesheet">
+      <!-- animations -->
+      <link href="css/animations.css" rel="stylesheet">
+    <!-- Main CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+  <div id="home"></div>
+
+
+
+  <input type="checkbox" id="sidebar-toggle"/>
+  <div class="page-container container-fluid">
+      <header>
+          <ul class="social">
+              <li><a href="https://github.com/ericgrogers" class="social-github"><img src="media/images/github.png" title="github"/></a></li>
+              <li><a href="https://www.linkedin.com/pub/eric-rogers/40/943/771/" class="social-linkedin"><img
+                      src="media/images/linkedin.png" title="LinkedIn"/></a></li>
+          </ul>
+      </header>
+
+      <label class="sidebar-toggle glyphicon glyphicon-align-justify" for="sidebar-toggle"></label>
+  <div class="content-container">
+
+        <section class="top-content">
+            <h1>[ <span>eric g rogers</span> ]</h1>
+            <h2 id="word-banner">Designer / Developer</h2>
+
+            <div class="down-arrow col-md-12">
+                <p>Find out more</p>
+                <a href="#about" id="hand" class="pulse">☟</a>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <h3 class="col-md-offset-2 col-md-8">About Me</h3>
+            <p><img class="col-md-offset-2 col-md-2" src="media/images/eric.jpg" alt="Mugshot" /></p>
+            <p class="col-md-offset-2 col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
+                asperiores cum cupiditate eveniet
+                hic ipsa ipsam ipsum iste libero maiores nisi, odio possimus quae quis, quod, sit tenetur. Dolore, doloremque.</p>
+            <p class="col-md-offset-2 col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias,
+                aliquid, amet
+                aperiam
+                commodi dolor dolorem dolores doloribus id illo molestias necessitatibus non numquam quas reprehenderit saepe sunt tempore voluptatem.</p>
+        </section>
+
+        <section class="proficiencies">
+            <h4 class="col-md-offset-2 col-md-8">Some of my skills include:</h4>
+            <ul id="skill-set" class="col-md-12">
+                <li class="col-md-offset-2 col-md-2 slideDown">HTML5</li>
+                <li class="col-md-2 slideDown">CSS3</li>
+                <li class="col-md-2 slideDown">JavaScript</li>
+                <li class="col-md-2 slideDown">jQuery</li>
+            </ul>
+        </section>
+
+        <section class="projects" id="projects">
+            <h3 class="col-md-offset-2 col-md-8"><span class="glyphicon glyphicon-arrow-left"
+                                                       id="back-button"></span>My Work<span
+                    class="glyphicon glyphicon-arrow-right" id="forward-button"></span></h3>
+            <div id="gallery" class="col-md-offset-2">
+                <div class="view view-third" id="img1">
+                    <img src="media/images/projects/thumbs/moviendex_thumb.jpg" />
+                    <div class="mask">
+                        <h2>Movie Ndex</h2>
+                        <p>Built with Google App Engine using Python.</p>
+                        <!--<a href="#" class="info">Read More</a>-->
+                        <a href="media/images/projects/movieindex.jpg" data-lightbox="gallery1"
+                           data-title="Movie Ndex Movie search engine." class="info">View</a>
+                        <!--<a href="#" class="info">Live Site</a>-->
+                    </div>
+                </div>
+                <div class="view view-third" id="img2">
+                    <img src="media/images/projects/thumbs/worldsurf_thumb.jpg" />
+                    <div class="mask">
+                        <h2>World Surf</h2>
+                        <p>Designed using Adobe Photoshop and Adobe Illustrator.</p>
+                        <!--<a href="#" class="info">Read More</a>-->
+                        <a href="media/images/projects/worldsurf.jpg" data-lightbox="gallery2"
+                           data-title="World Surf site design." class="info">View</a>
+                        <!--<a href="#" class="info">Live Site</a>-->
+                    </div>
+                </div>
+                <div class="view view-third" id="img3">
+                    <img src="media/images/projects/thumbs/horas_thumb.jpg" />
+                    <div class="mask">
+                        <h2>Horas App</h2>
+                        <p>Built using jQuery templating, ajax, php, and mySQL</p>
+                        <!--<a href="#" class="info">Read More</a>-->
+                        <a href="media/images/projects/horas.jpg" data-lightbox="gallery3"
+                           data-title="Horas Professional Time Management" class="info">View</a>
+                        <!--<a href="#" class="info">Live Site</a>-->
+                    </div>
+                </div>
+                <div class="view view-third" id="img4">
+                    <img src="media/images/projects/thumbs/chilango_thumb.jpg" />
+                    <div class="mask">
+                        <h2>Chilango Restaurant</h2>
+                        <p>Redesign using Angular.js.</p>
+                        <!--<a href="#" class="info">Read More</a>-->
+                        <a href="media/images/projects/chilango.jpg" data-lightbox="gallery4"
+                           data-title="Chilango Restaurant redesign." class="info">View</a>
+                        <!--<a href="#" class="info">Live Site</a>-->
+                    </div>
+                </div>
+                <div class="view view-third" id="img5">
+                    <img src="media/images/projects/thumbs/skrollr_thumb.jpg" />
+                    <div class="mask">
+                        <h2>Skrollr.js</h2>
+                        <p>Video presentation of Skrollr.js.</p>
+                        <!--<a href="#" class="info">Read More</a>-->
+                        <a href="media/images/projects/skrollr.jpg" data-lightbox="gallery5"
+                           data-title="Skrollr.js video presentation." class="info">View</a>
+                        <a target="_blank" href="https://www.youtube.com/watch?v=hhIw4Y6Ttjw" class="info">Presentation</a>
+                    </div>
+                </div>
+                <div class="view view-third" id="img6">
+                    <img src="media/images/projects/thumbs/guitarshop_thumb.jpg" />
+                    <div class="mask">
+                        <h2>Guitar Shop</h2>
+                        <p>Web standards project.</p>
+                        <!--<a href="#" class="info">Read More</a>-->
+                        <a href="media/images/projects/guitarshop.jpg" data-lightbox="gallery6"
+                           data-title="Guitar Shop." class="info">View</a>
+                        <a target="_blank" href="https://ericgrogers.github.io/wsd/" class="info">Live Site</a>
+                    </div>
+                </div>
+                <div class="view view-third" id="img7">
+                    <img src="media/images/projects/thumbs/bakerysecrets_thumb.jpg" />
+                    <div class="mask">
+                        <h2>Bakery Secrets</h2>
+                        <p>jQuery animation and interaction.</p>
+                        <a href="media/images/projects/bakerysecrets.jpg" data-lightbox="gallery7"
+                           data-title="Bakery secrets Interaction/Animation." class="info">View</a>
+                        <a target="_blank" href="https://ericgrogers.github.io/Bakery-Secrets" class="info">Live Site</a>
+                    </div>
+                </div>
+                <div class="view view-third" id="img8">
+                    <img src="media/images/projects/thumbs/videolibrary_thumb.jpg" />
+                    <div class="mask">
+                        <h2>Angular From Scratch</h2>
+                        <p>HTML 5 video gallery.</p>
+                        <a href="media/images/projects/videolibrary.jpg" data-lightbox="gallery8"
+                           data-title="Angular From Scratch Video Library." class="info">View</a>
+
+                    </div>
+                </div>
+                <div class="view view-third" id="img9">
+                    <img src="media/images/projects/thumbs/audioedit_thumb.jpg" />
+                    <div class="mask">
+                        <h2>Audio / Video </h2>
+                        <p>Editing using Adobe Audition and Adobe Premiere</p>
+                        <a href="media/images/projects/audiovideo.jpg" data-lightbox="gallery9"
+                           data-title="Audio / Video Editing." class="info">View</a>
+                    </div>
+                </div>
+                <div class="view view-third" id="img10">
+                    <img src="media/images/projects/thumbs/soair_thumb.jpg" />
+                    <div class="mask">
+                        <h2>SoAir Airlines</h2>
+                        <p>Page design.</p>
+                        <a href="media/images/projects/soair.jpg" data-lightbox="gallery10"
+                           data-title="SoAir Airlines page design." class="info">View</a>
+                    </div>
+                </div>
+            </div><!-- End of gallery -->
+
+        </section>
+
+        <section class="contact" id="contact">
+            <h3 class="col-md-offset-2 col-md-8">Contact Me</h3>
+            <p class="col-md-offset-2 col-md-8 disable-notice">This form is currently disabled on purpose.</p>
+            <form class="form-horizontal col-md-offset-2 col-md-8" role="form">
+                <div class="form-group">
+                    <label for="name" class="col-md-2 control-label sr-only">Name</label>
+                    <div class="col-md-8">
+                        <input type="text" class="form-control" id="name" placeholder="Name" disabled>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="col-md-2 control-label sr-only">Email</label>
+                    <div class="col-md-8">
+                        <input type="email" class="form-control" id="email" placeholder="Email" disabled>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="subject" class="col-md-2 control-label sr-only">Subject</label>
+                    <div class="col-md-8">
+                        <input type="text" class="form-control" id="subject" placeholder="Subject" disabled>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message" class="col-md-2 control-label sr-only">Message</label>
+                    <div class="col-md-8">
+                        <textarea class="form-control" id="message" rows="6" placeholder="Message" disabled></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-default" disabled>Send</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+    <footer>
+        <p>Copyright &copy;2014 Eric G Rogers All Rights Reserved.</p>
+    </footer>
+
+  </div><!-- end of content-container -->
+
+  <div class="sidebar">
+      <ul>
+          <li><a class="glyphicon glyphicon-home home-but" href="#home"></a> </li>
+          <li><a class="glyphicon glyphicon-list-alt about-but" href="#about"></a></li>
+          <li><a class="glyphicon glyphicon-briefcase projects-but" href="#projects"></a></li>
+          <li><a class="glyphicon glyphicon-envelope contact-but" href="#contact"></a></li>
+      </ul>
+  </div>
+  </div><!-- end page-container -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/plugins/bootstrap.min.js"></script>
+    <script src="js/plugins/lightbox.min.js"></script>
+    <!-- Main JS -->
+    <script src="js/main.js" type="text/javascript"></script>
+  </body>
+</html>
