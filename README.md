@@ -139,3 +139,54 @@
 
 ## The Site is now LIVE
 =======
+
+# Staging / Production Promotion Deployment Plan
+
+## To deploy to the Staging / Production Servers Strict adherence to the following process is required. 
+
+####1.	Merge Dev Branch into Master
+Upon completion of fully testing a new feature in your local dev environment merge the newFeatureName Branch back into master. To do this successfully you will need to first pull the remote master branch, ensuring your local master branch is up to date.
+
+####1.	$ git checkout master 
+  + Switches to the local master branch
+  + $ git pull github master 
+    +	github is the name of the remote repo we will use to differentiate between our other remote deployment servers
+
+####2. Resolve any conflicts 
+  + Visit each conflicted file and resolve any conflicts. This will require a saving.
+  + Once conflicts are resolved and saved, they need committed and another pull of remote is required.
+    + $ git add -A
+    + $ git commit -am ‘detailed commit message.’
+    + $ git pull github master
+      + $ git merge newFeatureName 
+      + Resolve any conflicts (see 1.2.2)
+
+####4.	Test 
+  +	If any tests fail, the master branch is flawed, and not ready to be pushed to remote. Resolve the issues prior to pushing to the remote in the next step.
+
+####5.	$ git push github master 
+
+##2.	Tag Release
+  + $ git tag -a vX.X.X -m ‘Release Code or Feature Name ’ 
+    +	X.X.X should be an incriminated according to the Versions Numbering Development Policy.
+    +	$ git push github --tags 
+      +	Tags are not automatically pushed in a normal push, they must be manually pushed to the remote repo.
+
+##3.	Promote to Staging
+
+### Promote the tested code to the staging environment to ensure stability within the overall system. 
+  +	$ git push Staging master
+
+####4.	Test Again!
+  + If anything fails, try to replicate the issue within the Local Dev Environment. Should the issue not be replicable there, identify why it isn’t working in Staging and attempt to solve the problem.
+
+####5.	Once testing is complete, push to Production Server
+
+####6.	Tag Release
+  +	$ git tag -a vX.X.X -m ‘Release Code or Feature Name ’ 
+    +	X.X.X should be an incriminated according to the Versions Numbering Development Policy.
+  +	$ git push github --tags 
+    +	Tags are not automatically pushed in a normal push, they must be manually pushed to the remote repo.
+
+####7.	$ git push Production master
+
