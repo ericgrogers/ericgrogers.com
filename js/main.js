@@ -52,10 +52,10 @@
     };
 
     var cycleForward = function(images){
-        images[0] +=3;
-        images[1] +=3;
-        images[2] +=3;
-        if(images[0] > 12){
+        images[0]++;
+        images[1]++;
+        images[2]++;
+        if(images[2] >10){
             images[0] = 1;
             images[1] = 2;
             images[2] = 3;
@@ -63,13 +63,14 @@
     };
 
     var cycleBack = function(images){
-        images[0] -=3;
-        images[1] -=3;
-        images[2] -=3;
+        images[0] --;
+        images[1] --;
+        images[2] --;
         if(images[0] < 1){
-            images[0] = 10;
-            images[1] = 11;
-            images[2] = 12;
+            images[0] = 8;
+            images[1] = 9;
+            images[2] = 10;
+        
         }
     };
 
