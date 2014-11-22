@@ -35,7 +35,7 @@
 
     var hideImages = function(){
         var i = 1;
-        for(i;i<=10;i++){
+        for(i;i<=12;i++){
             var image = "#img"+ String(i);
             $(image).hide();
         }
@@ -52,42 +52,24 @@
     };
 
     var cycleForward = function(images){
-        if (images[0] === 10){
+        images[0] +=3;
+        images[1] +=3;
+        images[2] +=3;
+        if(images[0] > 12){
             images[0] = 1;
-            images[1] ++;
-            images[2] ++;
-        }else if (images[1] === 10){
-            images[0] ++;
-            images[1] = 1;
-            images[2] ++;
-        }else if (images[2] === 10){
-            images[0] ++;
-            images[1] ++;
-            images[2] = 1;
-        }else{
-            images[0] ++;
-            images[1] ++;
-            images[2] ++;
+            images[1] = 2;
+            images[2] = 3;
         }
     };
 
     var cycleBack = function(images){
-        if (images[0] === 1){
+        images[0] -=3;
+        images[1] -=3;
+        images[2] -=3;
+        if(images[0] < 1){
             images[0] = 10;
-            images[1] --;
-            images[2] --;
-        }else if (images[1] === 1){
-            images[0] --;
-            images[1] = 10;
-            images[2] --;
-        }else if (images[2] === 1){
-            images[0] --;
-            images[1] --;
-            images[2] = 10;
-        }else{
-            images[0] --;
-            images[1] --;
-            images[2] --;
+            images[1] = 11;
+            images[2] = 12;
         }
     };
 
@@ -198,6 +180,6 @@
         });
     }
 
-    init();
+        init();
 
 })(jQuery);
