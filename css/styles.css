@@ -261,4 +261,31 @@ footer {
 #hand:hover {
   color: #269abc; }
 
+.amazon-ui {
+  position: relative;
+  padding-top: 100px;
+  text-align: center;
+  height: 100%;
+  clear: both;
+  color: #fff;
+  background: url("../media/images/dotted_overlay.png");
+  background-color: rgba(0, 0, 0, 0.8); }
+  .amazon-ui h3 {
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+    margin-bottom: 50px; }
+  .amazon-ui p {
+    width: 50%;
+    margin: 0 auto 50px auto;
+    text-align: left; }
+  .amazon-ui img {
+    width: 80%;
+    margin-bottom: 30px; }
+  .amazon-ui h4 {
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+    margin: 50px auto; }
+
 /*# sourceMappingURL=styles.css.map */
