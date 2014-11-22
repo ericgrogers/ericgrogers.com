@@ -52,42 +52,24 @@
     };
 
     var cycleForward = function(images){
-        if (images[0] === 10){
+        images[0]++;
+        images[1]++;
+        images[2]++;
+        if(images[2] >10){
             images[0] = 1;
-            images[1] ++;
-            images[2] ++;
-        }else if (images[1] === 10){
-            images[0] ++;
-            images[1] = 1;
-            images[2] ++;
-        }else if (images[2] === 10){
-            images[0] ++;
-            images[1] ++;
-            images[2] = 1;
-        }else{
-            images[0] ++;
-            images[1] ++;
-            images[2] ++;
+            images[1] = 2;
+            images[2] = 3;
         }
     };
 
     var cycleBack = function(images){
-        if (images[0] === 1){
-            images[0] = 10;
-            images[1] --;
-            images[2] --;
-        }else if (images[1] === 1){
-            images[0] --;
-            images[1] = 10;
-            images[2] --;
-        }else if (images[2] === 1){
-            images[0] --;
-            images[1] --;
+        images[0]--;
+        images[1]--;
+        images[2]--;
+        if(images[0] < 1){
+            images[0] = 8;
+            images[1] = 9;
             images[2] = 10;
-        }else{
-            images[0] --;
-            images[1] --;
-            images[2] --;
         }
     };
 
