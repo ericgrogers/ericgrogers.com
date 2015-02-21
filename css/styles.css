@@ -1,7 +1,9 @@
 body {
   background: url("../media/images/background_poster.jpg") fixed;
   background-size: cover;
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5em;
+  line-height: 2; }
   body h1 {
     font-family: "Orbitron", sans-serif;
     color: #666; }
@@ -157,27 +159,36 @@ header {
   position: relative;
   padding-top: 60px;
   top: 0;
-  height: 400px;
   background: url("../media/images/dotted_overlay.png");
   background-color: rgba(0, 0, 0, 0.8); }
-  .proficiencies h4 {
+  .proficiencies h3 {
     text-align: center;
     font-size: 2em;
     color: #fff;
     border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
     height: 40px;
     padding-bottom: 60px; }
+  .proficiencies h4 {
+    text-align: center;
+    font-size: 1.5em;
+    color: #fff;
+    height: 40px;
+    padding-bottom: 10px; }
   .proficiencies ul {
     padding: 20px 0 50px; }
     .proficiencies ul li {
       list-style: none;
-      font-size: 1.5em;
-      color: #eee;
+      font-size: 1.2em;
+      color: #999;
       text-align: center; }
   .proficiencies:after {
     content: "";
     display: block;
     clear: both; }
+  .proficiencies p {
+    text-align: center;
+    color: #ccc;
+    padding-bottom: 30px; }
 
 .projects {
   position: relative;
