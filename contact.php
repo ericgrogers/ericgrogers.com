@@ -50,7 +50,7 @@ if(isset($_POST['submitted'])) {
 		
         //Autorespond
 		$respondSubject = 'Thank you for contacting '.$siteTitle;
-		$respondBody = "Your message has been delivered! \n\nI will answer back as soon as possible. \n\nSincerely, \n\n-Eric G Rogers \n\n ericgrogers.com | ericgrogers@gmail.com";
+		$respondBody = "Your message has been delivered! \n\nI will answer back as soon as possible. \n\nSincerely, \n\n-Eric G Rogers \n\n ericgrogers.com | ericgrogers@fullsail.edu";
 		$respondHeaders = 'From: ' .' <'.$emailTo.'>' . "\r\n" . 'Reply-To: ' . $emailTo;
 		
 		mail($email, $respondSubject, $respondBody, $respondHeaders);
