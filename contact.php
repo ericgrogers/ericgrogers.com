@@ -1,7 +1,6 @@
 <?php 
 $emailTo = 'ericgrogers@fullsail.edu';
 $siteTitle = 'Eric G Rogers';
-$emailFrom = 'contact@ericgrogers.com'
 
 error_reporting(E_ALL ^ E_NOTICE); // hide all basic notices from PHP
 
@@ -42,7 +41,7 @@ if(isset($_POST['submitted'])) {
 	// upon no failure errors let's email now!
 	if(!isset($hasError)) {
 		
-		$subject = 'New message to '.$siteTitle.' from '.$emailFrom;
+		$subject = 'New message to '.$siteTitle.' from: contact@ericgrogers.com';
 		$sendCopy = trim($_POST['sendCopy']);
 		$body = "Name: $name \n\nEmail: $email \n\nMessage: $comments";
 		$headers = 'From: ' .' <'.$email.'>' . "\r\n" . 'Reply-To: ' . $email;
@@ -51,7 +50,7 @@ if(isset($_POST['submitted'])) {
 		
         //Autorespond
 		$respondSubject = 'Thank you for contacting '.$siteTitle;
-		$respondBody = "Your message has been delivered! \n\nI will answer back as soon as possible. \n\nSincerely, \n\n-Eric G Rogers \n\n ericgrogers.com | ericgrogers@fullsail.edu";
+		$respondBody = "Your message has been delivered! \n\nI will answer back as soon as possible. \n\nSincerely, \n\n-Eric G Rogers \n\n ericgrogers.com | ericgrogers@gmail.com";
 		$respondHeaders = 'From: ' .' <'.$emailTo.'>' . "\r\n" . 'Reply-To: ' . $emailTo;
 		
 		mail($email, $respondSubject, $respondBody, $respondHeaders);
