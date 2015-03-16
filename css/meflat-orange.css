@@ -1051,6 +1051,11 @@ a:focus,
     -webkit-transform:scale(1.2);
     transform:scale(1.2);
 }
+
+/*---  Learning more every day ---*/
+.learning {
+    margin-top: 60px;
+}
 /*----------------------
 -----Contact Styles-----
 ------------------------*/
