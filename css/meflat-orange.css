@@ -104,6 +104,21 @@ a:focus,
     font-weight:600;
     letter-spacing:0.05em;
 }
+
+div.static {
+    max-width: 500px;
+    padding: 0;
+    background: url(../assets/static_animated.gif);
+    opacity: 0;
+    transition: 3s all ease-in-out;
+}
+
+div.static.in {
+    max-width: 500px;
+    padding: 0;
+    background: url(../assets/static_animated.gif);
+    opacity: 1;
+}
 /*------------------
 ----- Buttons ------
 --------------------*/
@@ -370,7 +385,7 @@ a:focus,
 
 .jumbotron {
     position: relative;
-    background:#F78F39;
+    background:rgba(247,143,57,1);
     color:#fff;
     padding:0;
     margin-bottom:0;
@@ -416,7 +431,7 @@ a:focus,
 	transform:translateY(0);
 }
 
-.jumbotron .imac-frame {
+.jumbotron .mugshot {
     display:block;
     position:relative;
     width:100%;
@@ -430,25 +445,18 @@ a:focus,
 	transition:opacity .5s ease-out .6s,transform .5s ease-out .6s;
 }
 
-.jumbotron .imac-frame.in {
-	opacity:1;
+.jumbotron .oranged {
+    background:rgba(247,143,57,0.9);
+}
+
+.jumbotron .mugshot.in {
+    z-index: 100;
+	opacity:.6;
 	-webkit-transform:translateX(0);
 	transform:translateX(0);
 }
 
-.jumbotron .imac-screen{
-    background:transparent;
-    display:block;
-    position:absolute;
-    top:6%;
-    left:6%;
-    width:88%;
-	height:65%;
-    overflow:hidden;
-	opacity:1;
-	-webkit-transition:opacity .3s ease-out;
-	transition:opacity .3s ease-out;
-}
+
 
 .flexslider {
     margin:0;
@@ -1055,6 +1063,7 @@ a:focus,
 /*---  Learning more every day ---*/
 .learning {
     margin-top: 60px;
+    
 }
 /*----------------------
 -----Contact Styles-----
