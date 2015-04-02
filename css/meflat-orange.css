@@ -385,8 +385,9 @@ div.static.in {
 
 .jumbotron {
     position: relative;
-    background:rgba(247,143,57,1);
-    color:#fff;
+    /*background:rgba(247,143,57,1);*/
+    background: #1D2026;
+    color:#f2ece0;
     padding:0;
     margin-bottom:0;
     padding:180px 0 80px;
@@ -445,13 +446,13 @@ div.static.in {
 	transition:opacity .5s ease-out .6s,transform .5s ease-out .6s;
 }
 
-.jumbotron .oranged {
+/*.jumbotron .oranged {
     background:rgba(247,143,57,0.9);
-}
+}*/
 
 .jumbotron .mugshot.in {
     z-index: 100;
-	opacity:.6;
+	opacity:.9;
 	-webkit-transform:translateX(0);
 	transform:translateX(0);
 }
@@ -1070,6 +1071,10 @@ div.static.in {
 ------------------------*/
 #contact{
     padding-bottom:40px;
+}
+
+#contact h1{
+    color: #f2ece0;
 }
 
 #contact .section-header p {

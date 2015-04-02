@@ -39,7 +39,10 @@ $(document).ready(function() {
 	$("#home .text-col p").fitText(1.2, { minFontSize: '18px', maxFontSize: '32px' });
 	
 	$('.mugshot img').load(function(){
-		$('#home .text-col h1, #home .text-col p, #home .mugshot, #home .static').addClass('in');
+		$('#home .text-col h1, #home .text-col p, #home .mugshot').addClass('in');
+		setTimeout(function() {
+			$('#home .static').addClass('in');
+		}, 1500);
 	});
 	
 	/*============================================
