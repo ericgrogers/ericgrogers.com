@@ -18,24 +18,15 @@ $(document).ready(function() {
 			$('#main-nav').addClass('scrolled');    
 		}
 	});
+
+	
 	
 	/*============================================
 	Header Functions
 	==============================================*/
-	// $('.imac-screen').flexslider({
-	// 	prevText: '<i class="fa fa-angle-left"></i>',
-	// 	nextText: '<i class="fa fa-angle-right"></i>',
-	// 	animation: 'slide',
-	// 	slideshowSpeed: 3000,
-	// 	useCSS: true,
-	// 	controlNav: false,
-	// 	directionNav: false,
-	// 	pauseOnAction: false, 
-	// 	pauseOnHover: false,
-	// 	smoothHeight: false
-	// });
 	
-	$("#home .text-col h1").fitText(0.9, { minFontSize: '38px', maxFontSize: '63px' });
+	
+	$("#home .text-col h1").fitText(0.9, { minFontSize: '32px', maxFontSize: '63px' });
 	$("#home .text-col p").fitText(1.2, { minFontSize: '18px', maxFontSize: '32px' });
 	
 	$('.mugshot img').load(function(){

@@ -446,10 +446,6 @@ div.static.in {
 	transition:opacity .5s ease-out .6s,transform .5s ease-out .6s;
 }
 
-/*.jumbotron .oranged {
-    background:rgba(247,143,57,0.9);
-}*/
-
 .jumbotron .mugshot.in {
     z-index: 100;
 	opacity:.9;
@@ -1408,4 +1404,14 @@ div.static.in {
 	.jumbotron {
 		min-height:660px;
 	}
+
+    h1 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 991px ) {
+    #main-nav #logo h1 {
+        font-size: 42px;
+    }
 }
