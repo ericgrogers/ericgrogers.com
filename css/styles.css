@@ -338,6 +338,11 @@ div.static.in {
     background:#3a3c4a;
 }
 
+#main-nav.scrolled #logo {
+    border: 1px solid rgba(50,50,50,0.1);
+    margin: 5px 0;
+}
+
 #main-nav .nav a:hover:before,
 #main-nav .nav .active a:before {
     bottom:10px;
@@ -351,6 +356,8 @@ div.static.in {
 #main-nav #logo{
     opacity:1;
     vertical-align:middle;
+    border: 1px solid rgba(50,50,50,1);
+    border-radius: 50%;
 }
 
 #main-nav #logo h1{
@@ -385,7 +392,6 @@ div.static.in {
 
 .jumbotron {
     position: relative;
-    /*background:rgba(247,143,57,1);*/
     background: #1D2026;
     color:#f2ece0;
     padding:0;
