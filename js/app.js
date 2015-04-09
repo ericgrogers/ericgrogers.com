@@ -31,9 +31,10 @@ $(document).ready(function() {
 	
 	$('.mugshot img').load(function(){
 		$('#home .text-col h1, #home .text-col p, #home .mugshot').addClass('in');
-		setTimeout(function() {
-			$('#home .static').addClass('in');
-		}, 1500);
+	}).each(function(){
+		if(this.complete){
+			$(this).trigger('load');
+		}
 	});
 	
 	/*============================================
