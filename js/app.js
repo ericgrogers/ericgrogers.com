@@ -30,7 +30,10 @@ $(document).ready(function() {
 	$("#home .text-col p").fitText(1.2, { minFontSize: '18px', maxFontSize: '32px' });
 	
 	$('.mugshot img').load(function(){
-		$('#home .text-col h1, #home .text-col p, #home .mugshot').addClass('in');
+		$('#home .text-col h1, #home .text-col p, #home').addClass('in');
+		setTimeout(function() {
+			$('#home .mugshot').addClass('in');
+		}, 1000);
 	}).each(function(){
 		if(this.complete){
 			$(this).trigger('load');
