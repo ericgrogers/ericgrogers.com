@@ -613,7 +613,7 @@ div.static.in {
     line-height:28px;
 }
 
-.skills {
+.quote {
     margin-top:60px;
 }
 
@@ -645,7 +645,7 @@ div.static.in {
   font-size: 50%;
 }
 
-.skills h2 {
+.quote h2 {
     margin:0 0 80px;
     font-family:'Titillium Web';
     font-size:24px;
@@ -1014,6 +1014,24 @@ div.static.in {
     content:"\f0ac";
     font-family:"Fontawesome";
     margin-right:10px;
+}
+.modal h3 {
+    margin-top: 30px;
+}
+#colophon h5 {
+    margin-top: 30px;
+ 
+}
+
+.software, .technologies {
+    list-style-type: none;
+    columns: 2;
+    -moz-columns: 2;
+    -webkit-columns: 2;
+}
+
+.software>li, .technologies>li {
+    color: #999;
 }
 /*----------------------
 -----Dribbble Styles----
