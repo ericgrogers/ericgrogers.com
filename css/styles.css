@@ -341,6 +341,7 @@ div.static.in {
 #main-nav.scrolled #logo {
     border: 1px solid rgba(50,50,50,0.1);
     margin: 5px 0;
+    box-shadow: 0 0 0 3px rgba(255,255,255,1), 0 0 0 4px rgba(0,0,0,0.1);
 }
 
 #main-nav .nav a:hover:before,
@@ -358,6 +359,7 @@ div.static.in {
     vertical-align:middle;
     border: 1px solid rgba(50,50,50,1);
     border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(255,255,255,0), 0 0 0 4px rgba(100,100,100,0.5);
 }
 
 #main-nav #logo h1{
@@ -909,13 +911,13 @@ div.static.in {
 
 #project-modal .close{
     float:none;
-    font-size:52px;
+    font-size:42px;
     line-height:52px;
     font-weight:300;
     margin-top:0px;
     margin-bottom:30px;
     opacity:1;
-    color:inherit;
+    color:#d43f3a;
     text-shadow:none;
     -webkit-transition:all 0.2s ease-out;
     transition:all 0.2s ease-out;
