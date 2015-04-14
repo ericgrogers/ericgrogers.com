@@ -346,7 +346,8 @@ div.static.in {
 #main-nav.scrolled #logo {
     border: 1px solid rgba(50,50,50,0.1);
     margin: 5px 0;
-    box-shadow: 0 0 0 3px rgba(255,255,255,1), 0 0 0 4px rgba(0,0,0,0.1);
+    box-shadow: 0 0 0 3px rgba(255,255,255,1), 0 0 0 6px rgba(0,0,0,0.1);
+    background: url("../assets/stripes.png");
 }
 
 #main-nav .nav a:hover:before,
