@@ -1041,59 +1041,36 @@ div.static.in {
 .software>li, .technologies>li {
     color: #999;
 }
-/*----------------------
------Dribbble Styles----
-------------------------*/    
-.dribbble-button {
-    display:block;
-    text-align:center;
-    text-transform:uppercase;
-    margin:0;
+/*-----------------------
+-----SoAir full screen --
+------------------------*/
+
+.wireframes {
+    max-width: 960px;
+    margin: 0 auto;
 }
 
-.dribbble-button a{
-    display:block;
-    color:#fff;
-    background:#F78F39;
-    text-decoration:none;
-    padding:25px 0;
-    -webkit-transition:background .3s ease-out;
-    transition:background .3s ease-out;
+.wireframes h3 {
+    text-align: center;
+}
+.wireframes p {
+    margin-top: 30px;
 }
 
-.dribbble-button a:hover{
-    background:#F06096;
+.design-comps {
+    max-width: 960px;
+    margin: 0 auto;
 }
 
-#dribbble .row{
-    margin:0;
+.design-comps h3 {
+    text-align: center;
 }
 
-#dribbble [class*=col]{
-    padding:0;
+.design-comps p {
+    margin-top: 30px;
 }
 
-#dribbble a {
-    display:block;
-    overflow:hidden;
-}
 
-#dribbble a img {
-    -webkit-transition:all .3s ease-out;
-    transition:all .3s ease-out;
-}
-
-#dribbble a:hover img {
-    opacity:.6;
-    -webkit-transform:scale(1.2);
-    transform:scale(1.2);
-}
-
-/*---  Learning more every day ---*/
-.learning {
-    margin-top: 60px;
-    
-}
 /*----------------------
 -----Contact Styles-----
 ------------------------*/

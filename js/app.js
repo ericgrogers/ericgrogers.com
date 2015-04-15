@@ -162,7 +162,7 @@ $(document).ready(function() {
 			.html('')
 			.flexslider('destroy');
 	});
-	
+
 	
 	/*============================================
 	ScrollTo Links
