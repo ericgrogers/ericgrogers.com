@@ -98,6 +98,7 @@ a:focus,
 .navbar {
     margin:0;
     border-radius:0;
+    padding: 5px 0;
 }
 
 .section-header {
@@ -110,20 +111,10 @@ a:focus,
     letter-spacing:0.05em;
 }
 
-div.static {
-    max-width: 500px;
-    padding: 0;
-    background: url(../assets/static_animated.gif);
-    opacity: 0;
-    transition: 3s all ease-in-out;
+.static {
+    background: url(../assets/static.gif);
 }
 
-div.static.in {
-    max-width: 500px;
-    padding: 0;
-    background: url(../assets/static_animated.gif);
-    opacity: 1;
-}
 /*------------------
 ----- Buttons ------
 --------------------*/
@@ -400,7 +391,7 @@ div.static.in {
 
 .jumbotron {
     position: relative;
-    background: #1D2026;
+    background: rgba(29,32,38,0.975);
     color:#f2ece0;
     padding:0;
     margin-bottom:0;
@@ -449,6 +440,7 @@ div.static.in {
 	opacity:1;
 	-webkit-transform:translateY(0);
 	transform:translateY(0);
+    color: #F78F39;
 }
 
 .jumbotron .mugshot {
@@ -1367,7 +1359,7 @@ div.static.in {
 @media (max-width: 767px) {
 	
     .navbar {
-        padding:0 20px;
+        padding: 20px;
     }
     
     #main-nav {
