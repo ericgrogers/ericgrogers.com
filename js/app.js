@@ -26,20 +26,21 @@ $(document).ready(function() {
 	==============================================*/
 	
 	
-	$("#home .text-col h1").fitText(0.9, { minFontSize: '32px', maxFontSize: '63px' });
-	$("#home .text-col p").fitText(1.2, { minFontSize: '18px', maxFontSize: '32px' });
+	$("#home .text-col h1").fitText(0.9, { minFontSize: '32px', maxFontSize: '100px' });
+	$("#home .text-col p").fitText(1.2, { minFontSize: '18px', maxFontSize: '42px' });
 	
-	$('.mugshot img').load(function(){
-		$('#home .text-col h1, #home .text-col p, #home').addClass('in');
-		setTimeout(function() {
-			$('#home .mugshot').addClass('in');
-		}, 1000);
-	}).each(function(){
-		if(this.complete){
-			$(this).trigger('load');
-		}
-	});
-	
+//	$('.mugshot img').load(function(){
+//		$('#home .text-col h1, #home .text-col p, #home').addClass('in');
+//		setTimeout(function() {
+//			$('#home .mugshot').addClass('in');
+//		}, 1000);
+//	}).each(function(){
+//		if(this.complete){
+//			$(this).trigger('load');
+//		}
+//	});
+
+	$('#home .text-col h1, #home .text-col p, #home').addClass('in');
 	/*============================================
 	Project thumbs - Masonry
 	==============================================*/

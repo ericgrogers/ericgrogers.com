@@ -416,6 +416,7 @@ div.static.in {
     font-weight:600;
     letter-spacing:0.02em;
     margin-bottom:10px;
+    text-align: center;
 	opacity:0;
 	-webkit-transform:translateX(-1000px);
 	transform:translateX(-1000px);
@@ -427,13 +428,17 @@ div.static.in {
 	opacity:1;
 	-webkit-transform:translateX(0);
 	transform:translateX(0);
+    text-shadow:
+    4px 4px 0px #4d4d4d,
+    7px 7px 0px rgba(0, 0, 0, 0.2);
 }
 
 .jumbotron p{
-    font-size:32px;
+    font-size:42px;
     font-weight:400;
     letter-spacing:0.02em;
 	opacity:0;
+	text-align: center;
 	-webkit-transform:translateY(1000px);
 	transform:translateY(1000px);
 	-webkit-transition:opacity .5s ease-out .8s,-webkit-transform .5s ease-out .8s;
