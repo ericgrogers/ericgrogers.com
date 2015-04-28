@@ -420,8 +420,7 @@ a:focus,
 
 .background:after {
     content: '';
-    background: transparent url(../assets/static.gif) repeat top left;
-    opacity: 0.05;
+    background: transparent url(../assets/backgrounds/pattern.png) repeat top left;
 }
 
 .jumbotron {
@@ -443,7 +442,7 @@ a:focus,
 .jumbotron h1{
     font-weight:600;
     letter-spacing:0.02em;
-    margin-bottom:10px;
+    margin-bottom:0;
     text-align: center;
 	opacity:0;
 	-webkit-transform:translateX(-1000px);
@@ -453,12 +452,13 @@ a:focus,
 }
 
 .jumbotron h1.in{
+    width: 100%;
+    padding-bottom: 20px;
 	opacity:1;
+    background: rgba(0,0,0,0.5);
 	-webkit-transform:translateX(0);
 	transform:translateX(0);
-    text-shadow:
-    4px 4px 0 #4d4d4d,
-    7px 7px 0 rgba(0, 0, 0, 0.2);
+    
 }
 
 .jumbotron h2{
@@ -474,13 +474,13 @@ a:focus,
 }
 
 .jumbotron h2.in{
+    padding-bottom: 20px;
 	opacity:1;
+    background: rgba(0,0,0,0.5);
 	-webkit-transform:translateY(0);
 	transform:translateY(0);
     color: #F78F39;
-    text-shadow:
-    2px 2px 0 #fff,
-    4px 4px 0 rgba(0, 0, 0, 0.2);
+
 }
 
 .flexslider {
