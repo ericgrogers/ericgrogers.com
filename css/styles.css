@@ -408,205 +408,20 @@ a:focus,
     left: 0px;
     z-index: 0;
 }
+
 .background:before {
     content: '';
-    background: transparent url(../assets/backgrounds/bg1.jpg);
-    -webkit-animation: mountainsAnimation 20s 1, mountainSwing 20s 20s infinite;
-    -moz-animation: mountainsAnimation 20s 1, mountainSwing 20s 20s infinite;
-    -o-animation: mountainsAnimation 20s 1, mountainSwing 20s 20s infinite;
-    -ms-animation: mountainsAnimation 20s 1, mountainSwing 20s 20s infinite;
-    animation: mountainsAnimation 20s 1, mountainSwing 20s 20s infinite;
+    background: url(../assets/backgrounds/top-bg.jpg);
+    background-size: cover;
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+    
 }
+
 .background:after {
     content: '';
     background: transparent url(../assets/static.gif) repeat top left;
-    opacity: .05;
-}
-
-/* First Animation for the mountains */
-@-webkit-keyframes mountainsAnimation {
-    0% {
-        opacity: 0;
-        transform: scale(5) rotate(-45deg);
-    }
-    
-    25% {
-        opacity: 1
-    }
-    
-    50% {
-        opacity: 1;
-       
-    }
-    100% { 
-     transform: scale(1.2) rotate(0deg);
-    }
-}
-@-moz-keyframes mountainsAnimation {
-    0% {
-        opacity: 0;
-        transform: scale(5) rotate(-45deg);
-    }
-    
-    25% {
-        opacity: 1
-    }
-    
-    50% {
-        opacity: 1;
-       
-    }
-    100% { 
-     transform: scale(1.2) rotate(0deg);
-    }
-}
-@-o-keyframes mountainsAnimation {
-    0% {
-        opacity: 0;
-        transform: scale(5) rotate(-45deg);
-    }
-    
-    25% {
-        opacity: 1
-    }
-    
-    50% {
-        opacity: 1;
-       
-    }
-    100% { 
-     transform: scale(1.2) rotate(0deg);
-    }
-}
-@-ms-keyframes mountainsAnimation {
-    0% {
-        opacity: 0;
-        transform: scale(5) rotate(-45deg);
-    }
-    
-    25% {
-        opacity: 1
-    }
-    
-    50% {
-        opacity: 1;
-       
-    }
-    100% { 
-     transform: scale(1.2) rotate(0deg);
-    }
-}
-@keyframes mountainsAnimation {
-    0% {
-        opacity: 0;
-        transform: scale(5) rotate(-45deg);
-    }
-    
-    25% {
-        opacity: 1
-    }
-    
-    50% {
-        opacity: 1;
-       
-    }
-    100% { 
-     transform: scale(1.2) rotate(0deg);
-    }
-}
-
-/*---- Mountains Swing animation --------*/
-
-
-@-webkit-keyframes mountainSwing {
-    0% {
-        transform: rotate(0deg) scale(1.2);
-    }
-    
-    
-    30% {
-        transform: rotate(2deg) scale(1.2);
-    }
-    
-    60% {
-        transform: rotate(-2deg) scale(1.2);
-    }
-    
-    100%{
-        transform: rotate(0) scale(1.2);
-    }
-}
-@-moz-keyframes mountainSwing {
-    0% {
-        transform: rotate(0deg) scale(1.2);
-    }
-    
-    
-    30% {
-        transform: rotate(2deg) scale(1.2);
-    }
-    
-    60% {
-        transform: rotate(-2deg) scale(1.2);
-    }
-    
-    100%{
-        transform: rotate(0) scale(1.2);
-    }
-}
-@-o-keyframes mountainSwing {
-    0% {
-        transform: rotate(0deg) scale(1.2);
-    }
-    
-    
-    30% {
-        transform: rotate(2deg) scale(1.2);
-    }
-    
-    60% {
-        transform: rotate(-2deg) scale(1.2);
-    }
-    
-    100%{
-        transform: rotate(0) scale(1.2);
-    }
-}
-@-ms-keyframes mountainSwing {
-    0% {
-        transform: rotate(0deg) scale(1.2);
-    }
-    
-    
-    30% {
-        transform: rotate(2deg) scale(1.2);
-    }
-    
-    60% {
-        transform: rotate(-2deg) scale(1.2);
-    }
-    
-    100%{
-        transform: rotate(0) scale(1.2);
-    }
-}
-@keyframes mountainSwing {
-    0% {
-        transform: rotate(0deg) scale(1.2);
-    }
-    
-    
-    30% {
-        transform: rotate(2deg) scale(1.2);
-    }
-    
-    60% {
-        transform: rotate(-2deg) scale(1.2);
-    }
-    
-    100%{
-        transform: rotate(0) scale(1.2);
-    }
+    opacity: 0.05;
 }
 
 .jumbotron {
@@ -656,7 +471,6 @@ a:focus,
 	transform:translateY(1000px);
 	-webkit-transition:opacity .5s ease-out .8s,-webkit-transform .5s ease-out .8s;
 	transition:opacity .5s ease-out .8s,transform .5s ease-out .8s;
-    text-shadow: 2px 3px 0 rgba(0,0,0,1);;
 }
 
 .jumbotron h2.in{
@@ -664,6 +478,9 @@ a:focus,
 	-webkit-transform:translateY(0);
 	transform:translateY(0);
     color: #F78F39;
+    text-shadow:
+    2px 2px 0 #fff,
+    4px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
 .flexslider {
