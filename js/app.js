@@ -27,8 +27,11 @@ $(document).ready(function() {
 	
 	
 	$("#home .text-col h1").fitText(0.9, { minFontSize: '32px', maxFontSize: '100px' });
-	$("#home .text-col p").fitText(1.2, { minFontSize: '18px', maxFontSize: '42px' });
-	$('#home .text-col h1, #home .text-col p, #home').addClass('in');
+	$("#home .text-col h2").fitText(1.2, { minFontSize: '18px', maxFontSize: '42px' });
+	$('#home .text-col h1, #home .text-col h2, #home').addClass('in');
+	$('#home .bg-zoom').addClass('zoom');
+
+
 	/*============================================
 	Project thumbs - Masonry
 	==============================================*/

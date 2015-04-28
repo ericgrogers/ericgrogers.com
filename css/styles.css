@@ -366,7 +366,7 @@ a:focus,
     box-shadow: 0 0 0 3px rgba(255,255,255,0), 0 0 0 4px rgba(100,100,100,0.1);
 }
 
-#main-nav #logo h1{
+#main-nav #logo h3{
     font-size:64px;
     font-weight:600;
     -webkit-transition:font-size 0.3s ease-out;
@@ -379,7 +379,7 @@ a:focus,
     top:15px;
 }
 
-#main-nav.scrolled #logo h1{
+#main-nav.scrolled #logo h3{
     font-size:52px;
 }
 
@@ -396,11 +396,225 @@ a:focus,
 -----Header Styles------
 ------------------------*/
 
+/*------ Backgrounds -------*/
+
+.background,
+.background:before,
+.background:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+}
+.background:before {
+    content: '';
+    background: transparent url(../assets/backgrounds/bg1.jpg);
+    -webkit-animation: mountainsAnimation 20s 1, mountainSwing 20s 20s infinite;
+    -moz-animation: mountainsAnimation 20s 1, mountainSwing 20s 20s infinite;
+    -o-animation: mountainsAnimation 20s 1, mountainSwing 20s 20s infinite;
+    -ms-animation: mountainsAnimation 20s 1, mountainSwing 20s 20s infinite;
+    animation: mountainsAnimation 20s 1, mountainSwing 20s 20s infinite;
+}
+.background:after {
+    content: '';
+    background: transparent url(../assets/static.gif) repeat top left;
+    opacity: .05;
+}
+
+/* First Animation for the mountains */
+@-webkit-keyframes mountainsAnimation {
+    0% {
+        opacity: 0;
+        transform: scale(5) rotate(-45deg);
+    }
+    
+    25% {
+        opacity: 1
+    }
+    
+    50% {
+        opacity: 1;
+       
+    }
+    100% { 
+     transform: scale(1.2) rotate(0deg);
+    }
+}
+@-moz-keyframes mountainsAnimation {
+    0% {
+        opacity: 0;
+        transform: scale(5) rotate(-45deg);
+    }
+    
+    25% {
+        opacity: 1
+    }
+    
+    50% {
+        opacity: 1;
+       
+    }
+    100% { 
+     transform: scale(1.2) rotate(0deg);
+    }
+}
+@-o-keyframes mountainsAnimation {
+    0% {
+        opacity: 0;
+        transform: scale(5) rotate(-45deg);
+    }
+    
+    25% {
+        opacity: 1
+    }
+    
+    50% {
+        opacity: 1;
+       
+    }
+    100% { 
+     transform: scale(1.2) rotate(0deg);
+    }
+}
+@-ms-keyframes mountainsAnimation {
+    0% {
+        opacity: 0;
+        transform: scale(5) rotate(-45deg);
+    }
+    
+    25% {
+        opacity: 1
+    }
+    
+    50% {
+        opacity: 1;
+       
+    }
+    100% { 
+     transform: scale(1.2) rotate(0deg);
+    }
+}
+@keyframes mountainsAnimation {
+    0% {
+        opacity: 0;
+        transform: scale(5) rotate(-45deg);
+    }
+    
+    25% {
+        opacity: 1
+    }
+    
+    50% {
+        opacity: 1;
+       
+    }
+    100% { 
+     transform: scale(1.2) rotate(0deg);
+    }
+}
+
+/*---- Mountains Swing animation --------*/
+
+
+@-webkit-keyframes mountainSwing {
+    0% {
+        transform: rotate(0deg) scale(1.2);
+    }
+    
+    
+    30% {
+        transform: rotate(2deg) scale(1.2);
+    }
+    
+    60% {
+        transform: rotate(-2deg) scale(1.2);
+    }
+    
+    100%{
+        transform: rotate(0) scale(1.2);
+    }
+}
+@-moz-keyframes mountainSwing {
+    0% {
+        transform: rotate(0deg) scale(1.2);
+    }
+    
+    
+    30% {
+        transform: rotate(2deg) scale(1.2);
+    }
+    
+    60% {
+        transform: rotate(-2deg) scale(1.2);
+    }
+    
+    100%{
+        transform: rotate(0) scale(1.2);
+    }
+}
+@-o-keyframes mountainSwing {
+    0% {
+        transform: rotate(0deg) scale(1.2);
+    }
+    
+    
+    30% {
+        transform: rotate(2deg) scale(1.2);
+    }
+    
+    60% {
+        transform: rotate(-2deg) scale(1.2);
+    }
+    
+    100%{
+        transform: rotate(0) scale(1.2);
+    }
+}
+@-ms-keyframes mountainSwing {
+    0% {
+        transform: rotate(0deg) scale(1.2);
+    }
+    
+    
+    30% {
+        transform: rotate(2deg) scale(1.2);
+    }
+    
+    60% {
+        transform: rotate(-2deg) scale(1.2);
+    }
+    
+    100%{
+        transform: rotate(0) scale(1.2);
+    }
+}
+@keyframes mountainSwing {
+    0% {
+        transform: rotate(0deg) scale(1.2);
+    }
+    
+    
+    30% {
+        transform: rotate(2deg) scale(1.2);
+    }
+    
+    60% {
+        transform: rotate(-2deg) scale(1.2);
+    }
+    
+    100%{
+        transform: rotate(0) scale(1.2);
+    }
+}
+
 .jumbotron {
     position: relative;
-/*    background: rgba(29,32,38,0.975);*/
+    background: rgba(29,32,38,0.975);
+    width: 100%;
+    height: 700px;
     color:#f2ece0;
-    padding:0;
     margin-bottom:0;
     padding:180px 0 80px;
 	overflow:hidden;
@@ -408,6 +622,7 @@ a:focus,
 
 .jumbotron .text-col{
     margin-top:50px;
+    z-index: 100;
 }
 
 .jumbotron h1{
@@ -427,11 +642,11 @@ a:focus,
 	-webkit-transform:translateX(0);
 	transform:translateX(0);
     text-shadow:
-    4px 4px 0px #4d4d4d,
-    7px 7px 0px rgba(0, 0, 0, 0.2);
+    4px 4px 0 #4d4d4d,
+    7px 7px 0 rgba(0, 0, 0, 0.2);
 }
 
-.jumbotron p{
+.jumbotron h2{
     font-size:42px;
     font-weight:400;
     letter-spacing:0.02em;
@@ -441,38 +656,15 @@ a:focus,
 	transform:translateY(1000px);
 	-webkit-transition:opacity .5s ease-out .8s,-webkit-transform .5s ease-out .8s;
 	transition:opacity .5s ease-out .8s,transform .5s ease-out .8s;
+    text-shadow: 2px 3px 0 rgba(0,0,0,1);;
 }
 
-.jumbotron p.in{
+.jumbotron h2.in{
 	opacity:1;
 	-webkit-transform:translateY(0);
 	transform:translateY(0);
     color: #F78F39;
-    
 }
-
-.jumbotron .mugshot {
-    display:block;
-    position:relative;
-    width:100%;
-    max-width:500px;
-    margin:0 auto;
-    overflow:hidden;
-	opacity:0;
-	-webkit-transform:translateX(1000px);
-	transform:translateX(1000px);
-	-webkit-transition:opacity .5s ease-out .6s,-webkit-transform .5s ease-out .6s;
-	transition:opacity .5s ease-out .6s,transform .5s ease-out .6s;
-}
-
-.jumbotron .mugshot.in {
-    z-index: 100;
-	opacity: 1;
-	-webkit-transform:translateX(0);
-	transform:translateX(0);
-}
-
-
 
 .flexslider {
     margin:0;
@@ -534,78 +726,6 @@ a:focus,
 .flexslider:hover .flex-next {opacity: 1; right: 5px;}
 .flexslider:hover .flex-prev {opacity: 1; left: 5px;}
 
-/*----------------------
------Services Styles----
-------------------------*/  
-.services .item {
-    text-align:center;
-    margin-bottom:30px;
-}
-
-.services .item .icon{
-    margin:0 auto 30px;
-    -webkit-transition:all .3s ease-out;
-    transition:all .3s ease-out;
-}
-
-.services .item h2{
-    font-size:24px;
-    -webkit-transition:all .3s ease-out;
-    transition:all .3s ease-out;
-}
-
-.services .item:hover h2{
-    color:#F78F39;
-}
-
-.services .item:hover .icon{
-    -webkit-transform:translateY(-10px);
-    transform:translateY(-10px);
-    -webkit-transition:-webkit-transform .4s ease-out;
-    transition:transform .4s ease-out;
-}
-/*----------------------
------Featured Project----
-------------------------*/  
-.img-wrapper {
-    position:relative;
-    width:100%;
-    height:auto;
-    max-width:800px;
-    margin:0 auto;
-    overflow:hidden;
-}
-
-.img-wrapper img {
-    -webkit-transition:opacity .4s ease-out;
-    transition:opacity .4s ease-out;
-}
-
-.img-wrapper:hover img {
-    opacity:.6;
-}
-
-.img-wrapper .on-hover{
-    position:absolute;
-    top:50%;
-    margin-top:-30px;
-    width:100%;
-    opacity:1;
-    -webkit-transform:translateX(-50px);
-    transform:translateX(-50px);
-    opacity:0;
-    -webkit-transition:all .3s ease-out;
-    transition:all .3s ease-out;
-}
-
-.img-wrapper:hover .on-hover{
-    -webkit-transform:translateX(0);
-    transform:translateX(0);
-    opacity:1;
-}
-.img-wrapper .on-hover .btn{
-    opacity:1;
-}
 
 /*----------------------
 -----About Styles----
@@ -628,34 +748,6 @@ a:focus,
 
 .quote {
     margin-top:60px;
-}
-
-.chart {
-  position: relative;
-  display: inline-block;
-  width: 140px;
-  height: 140px;
-  margin:50px 0;
-  text-align: center;
-}
-
-.chart canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.percent {
-    display: inline-block;
-    line-height: 140px;
-	font-size:38px;
-	font-weight:300;
-    z-index: 2;
-}
-.percent:after {
-  content: '%';
-  margin-left: 0.1em;
-  font-size: 50%;
 }
 
 .quote h2 {
@@ -1429,3 +1521,19 @@ a:focus,
         font-size: 42px;
     }
 }
+
+
+.bg-zoom {
+    background: url(../assets/eric_bw.jpg);
+    width: 100%;
+    heigth: 100%;
+    z-index: 10;
+}
+
+
+
+
+
+
+
+
