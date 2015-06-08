@@ -29,7 +29,6 @@ $(document).ready(function() {
 	$("#home .text-col h1").fitText(0.9, { minFontSize: '32px', maxFontSize: '100px' });
 	$("#home .text-col h2").fitText(1.2, { minFontSize: '18px', maxFontSize: '42px' });
 	$('#home .text-col h1, #home .text-col h2, #home').addClass('in');
-	$('#home .bg-zoom').addClass('zoom');
 
 
 	/*============================================
@@ -52,31 +51,7 @@ $(document).ready(function() {
 		waypointsRefresh();
 	});
 
-	/*============================================
-	Filter Projects
-	==============================================*/
-	$('#filter-works a').click(function(e){
-		e.preventDefault();
 
-		$('#filter-works li').removeClass('active');
-		$(this).parent('li').addClass('active');
-
-		var category = $(this).attr('data-filter');
-
-		$('.project-item').each(function(){
-			if($(this).is(category)){
-				$(this).removeClass('filtered');
-			}
-			else{
-				$(this).addClass('filtered');
-			}
-
-			$('#projects-container').masonry('reload');
-		});
-
-		scrollSpyRefresh();
-		waypointsRefresh();
-	});
 
 	/*============================================
 	Project Preview
